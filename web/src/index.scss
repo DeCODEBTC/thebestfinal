@@ -1,0 +1,26 @@
+$primary-color: #3f37c9;
+$secondary-color: #3f37c9;
+
+@import 'node_modules/spectre.css/src/spectre';
+@import 'node_modules/spectre.css/src/spectre-exp';
+@import 'node_modules/spectre.css/src/spectre-icons';
+
+// Example of global css variable. Then you can use like: "background-color: var(--global-color-example);"
+// But, until the moment no customization was necessary
+:root {
+  --global-color-example: red;
+}
+
+.mb-3 {
+  margin-bottom: 16px;
+}
+
+.card-error {
+  background: lighten($error-color, 53%);
+  border-color: $error-color;
+}
+
+.card-success {
+  background: lighten($success-color, 53%);
+  border-color: $success-color;
+}
